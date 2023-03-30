@@ -35,7 +35,7 @@ public class UsersController {
     }
     @PostMapping("/users")
     public String saveUser(@RequestParam("firstName") String firstName, 
-                           @RequestParam("lastName") String password,HttpSession session) {
+                           @RequestParam("password") String password,HttpSession session) {
     	String helper = "";
     	for(Users u: users) {
     		if(u.getNombre().equals(firstName) && u.getPassword().equals(password)) {

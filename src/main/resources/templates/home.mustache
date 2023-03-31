@@ -13,11 +13,17 @@
          
             <div class="card-body">
               <h5 class="card-title">Bienvenido al sistema {{ mensaje }}</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			              {{#usuarios}}
+			  <p>Nombre: {{nombre}}</p>
+			  <p>Apellido: {{apellido}}</p>
+			  <p>Rol: {{rol}}</p>
+			  <hr>
+			{{/usuarios}}
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
     <!-- Cargar scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-+AmZq3yi75skBldWQdwQZDhh+RphLCH+b8pWz0EJyNRfM4X9X+8hZJh4v4wYfL5" crossorigin="anonymous"></script>
   </body>

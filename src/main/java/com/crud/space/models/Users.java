@@ -1,4 +1,4 @@
-package com.crud.space;
+package com.crud.space.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
